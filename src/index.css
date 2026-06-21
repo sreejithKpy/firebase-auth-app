@@ -1,0 +1,279 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+/* ==========================================================================
+   🔒 PREMIUM DARK AUTHENTICATION STYLE (auth.css)
+   ========================================================================== */
+
+.auth-page-wrapper {
+  background-color: #09090b; /* Deep Cyber Dark Background */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+}
+
+.auth-container {
+  width: 100%;
+  max-width: 420px;
+  background: #141419; /* Sleek Card Background */
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  animation: authFadeIn 0.4s ease-out;
+}
+
+/* 🌟 HEADER */
+.auth-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.auth-header h2 {
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+  letter-spacing: -0.02em;
+}
+
+.auth-header p {
+  color: #a1a1aa;
+  font-size: 0.9rem;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* 🖋️ FORM & INPUT GROUPS */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.auth-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.auth-input-group label {
+  color: #e4e4e7;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-align: left;
+}
+
+.auth-input-group input {
+  background: #1d1d24;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  color: #ffffff;
+  font-size: 0.95rem;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+/* ഇൻപുട്ട് ബോക്സിൽ ക്ലിക്ക് ചെയ്യുമ്പോൾ വരാൻ ഒരു Neon Blue Glow */
+.auth-input-group input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.auth-input-group input::placeholder {
+  color: #52525b;
+}
+
+/* 🚀 SUBMIT BUTTON */
+.auth-submit-btn {
+  background: #3b82f6;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.85rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 0.5rem;
+}
+
+.auth-submit-btn:hover {
+  background: #2563eb;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+/* 🔄 FOOTER TOGGLE */
+.auth-footer {
+  margin-top: 2rem;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding-top: 1.5rem;
+}
+
+.auth-footer p {
+  color: #71717a;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.auth-toggle-btn {
+  background: none;
+  border: none;
+  color: #3b82f6;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 0.4rem;
+  transition: color 0.2s;
+}
+
+.auth-toggle-btn:hover {
+  color: #60a5fa;
+  text-decoration: underline;
+}
+
+/* ANIMATION */
+@keyframes authFadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ==========================================================================
+   📊 PREMIUM DARK DASHBOARD STYLE (dashboard.css)
+   ========================================================================== */
+
+.dash-page-wrapper {
+  background-color: #09090b; /* ആപ്പിന്റെ മെയിൻ സൈബർ ഡാർക്ക് ബാക്ക്ഗ്രൗണ്ട് */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+}
+
+.dash-container {
+  width: 100%;
+  max-width: 480px;
+  background: #141419; /* ഗ്ലാസ്മോർഫിക് ഡാർക്ക് കാർഡ് */
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  animation: dashFadeIn 0.4s ease-out;
+}
+
+/* 👤 USER AVATAR & HEADER */
+.dash-avatar {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 700;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 1.25rem auto;
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.3);
+}
+
+.dash-header h2 {
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0 0 0.4rem 0;
+}
+
+.dash-user-email {
+  color: #a1a1aa;
+  font-size: 0.95rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+.dash-divider {
+  border: 0;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.08);
+  margin: 2rem 0;
+}
+
+/* 📊 WORKSPACE CONTENT CARD */
+.dash-content-card {
+  background: #1d1d24;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 12px;
+  padding: 1.25rem;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.dash-content-card h3 {
+  color: #ffffff;
+  font-size: 1.1rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.dash-content-card p {
+  color: #71717a;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0 0 1rem 0;
+}
+
+/* ബ്ലൂ/ഗ്രീൻ പൾസ് ചെയ്യുന്ന സ്റ്റാറ്റസ് ബാഡ്ജ് */
+.dash-status-badge {
+  display: inline-block;
+  background: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.3rem 0.75rem;
+  border-radius: 20px;
+}
+
+/* 🚪 LOGOUT BUTTON (RED ALERT STYLE) */
+.dash-logout-btn {
+  width: 100%;
+  background: transparent;
+  border: 1px solid rgba(239, 68, 68, 0.4);
+  color: #ef4444;
+  border-radius: 8px;
+  padding: 0.85rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.dash-logout-btn:hover {
+  background: #ef4444;
+  color: #ffffff;
+  box-shadow: 0 4px 15px rgba(239, 68, 68, 0.3);
+  transform: translateY(-1px);
+}
+
+.dash-logout-btn:active {
+  transform: translateY(0);
+}
+
+/* ANIMATION */
+@keyframes dashFadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
